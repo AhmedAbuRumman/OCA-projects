@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+/* nav bar style start using flexbox css method */
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+header ul
+{
+    position: relative;
+    display: flex;
+    
+}
+header ul li
+{
+    position: relative;
+    list-style: none;
+   
+}
+header ul li a
+{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+/* nav bar style start */
+/* home style start using flexbox css method */
+section
+{
+    padding: 100px;
+}
+.banner
+{
+position: relative;
+min-height: 100vh;
+background-image: url(../images/ahmed1.jpeg);
+background-size: cover;
+background-position: right;
+display: flex;
+justify-content: space-between;
+align-items: center;
+opacity: .8;
+}
+.banner h2
+{
+    font-size: 3em;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    
+}
+.banner h3
+{
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 500;
+}
+.btn
+{
+    position: relative;
+    background: #B00000 ;
+    display: inline-block;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/* home style end */
+/* about style start using flexbox css method */
+
+.about
+{
+    background: black ;
+}
+.heading
+{
+    width: 100;
+    text-align: center;
+    margin-bottom: 30px;
+    color:#B00000;
+}
+.heading h2
+{
+font-weight: 600;
+font-size: 30px;
+}
+.content
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+.contentBX
+{
+    padding-right: 30px;
+    margin: 50px;
+    color: #B00000;
+}
+.content h3
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.w50
+{
+    min-width: 100%;
+    margin: 0 10px;
+    
+}
+img
+{
+    max-width: 100%;
+}
+/* about style end */
+/* project style start using grid css method */
+.projects
+{
+    background: #111;
+    justify-items: center;
+    
+}
+.heading.white
+{
+    color: #fff;
+}
+.projects .content
+{
+    display: grid;
+    justify-content: center;
+   grid-template-columns: auto auto auto;
+  box-shadow: 3px solid #B00000;
+ 
+   
+}
+.projects .content .projectsBX
+{
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+    
+   
+}
+.projects .content .projectsBX:hover
+{
+background: #B00000;
+}
+.projects .content .projectsBX img
+{
+    
+    filter: invert(1);
+}
+.projects .content .projectsBX h2
+{
+    font-size: 20px;
+    font-weight: 600;
+}
+/* project style end */
+/* content style strat using bootstrap */
+.contact
+{
+    background: black ;
+    color:#B00000 ;
+}
+
+
+.social-icons a
+{
+width: 40px;
+height: 40px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: black;
+color: #B00000;
+margin: 20px 10px;
+border-radius: 50%;
+}
+.social-icons
+{
+    display: flex;
+    position: relative;
+    justify-items: center;
+    margin: 0 600px;
+}
+/* content style end */
+
+@media only screen and (max-width: 600px) {
+    .projects .content{
+        display: grid;
+        justify-content: center;
+       grid-template-columns: auto auto;
+       box-shadow: 3px solid #B00000;     
+    }
+}
+@media only screen and (max-width: 300px) {
+    .projects .content{
+        display: grid;
+        justify-content: center;
+       grid-template-columns: auto;
+       box-shadow: 3px solid #B00000;     
+    }
+}
+@media only screen and (max-width: 700px) {
+    .content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
